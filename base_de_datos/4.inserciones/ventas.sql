@@ -32,7 +32,6 @@ id_Detalle_Venta int auto_increment primary key not null,
 venta_id int not null,
 producto_id int not null,
 cantidad int not null,
-precio_unitario int not null,
 updated_at datetime default current_timestamp
 on update current_timestamp,
 created_by int,
@@ -136,3 +135,4 @@ INSERT INTO Detalle_Ventas (cantidad, created_by, updated_by, venta_id, producto
 	2,
     2
 );
+
